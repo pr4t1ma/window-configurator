@@ -1,26 +1,46 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+main {
+  display: flex;
+  gap: 2rem;
+}
+input {
+  padding: 5px;
+  font-size: 1rem;
+  width: 2rem;
+  display: inline;
 }
 
-.add-btn {
-  position: fixed;
-  bottom: 50%;
-  right: 2rem;
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: inner-spin-button !important;
+  width: 30px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
 }
 
-.add-btn.y {
-  bottom: 2rem;
-  right: 50%;
+.sidebar {
+  width: 270px;
+  background: #eee;
+  padding: 3rem;
+}
+
+.field {
+  padding: 5px;
+}
+
+button {
+  display: inline-block;
+  padding: 10px 20px;
 }
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(4, auto);
   gap: 10px;
+  width: fit-content;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  padding: 10px;
 }
 
 .grid-item {
@@ -28,4 +48,11 @@
   border: 1px solid #ccc;
   width: 60px;
   height: 60px;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  font-size: 0.7rem;
+  color: #666;
 }
