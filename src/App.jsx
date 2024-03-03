@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import Header from "./Header";
+import ConfigOption from "./ConfigOption";
 
 function App() {
   const [countX, setCountX] = useState(1);
@@ -32,7 +33,10 @@ function App() {
                   key={i}
                   className="grid-item"
                   style={{ gridColumnStart: i + 1, gridRowStart: j + 1 }}
-                >{`${i + 1}, ${j + 1}`}</div>
+                >
+                  {`${i + 1}, ${j + 1}`}
+                  <ConfigOption />
+                </div>
               ));
           })}
       </div>
