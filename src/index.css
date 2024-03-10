@@ -58,11 +58,11 @@ button:focus-visible,
     135deg,
     #b8e1fc 0%,
     #a9d2f3 10%,
-    #90bff0 40%,
-    #6ba8e5 41%
+    #bdd7f4 40%,
+    #a2caf2 41%
   ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 
-  border: 1px solid #ccc;
+  border: 10px inset #ccc;
   width: 200px;
   height: 200px;
 }

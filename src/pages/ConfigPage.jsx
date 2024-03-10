@@ -25,7 +25,7 @@ const ConfigPage = () => {
       <PageHeader link="/catalog" title="Add/edit window" />
       <Header />
       <div className="container flex min-h-[50vh]">
-        <div className="border p-4 gap-4 border-gray-400 inline-grid m-auto">
+        <div className="border p-4 gap-4 border-gray-400 inline-grid m-auto bg-gray-300">
           {Array(countY)
             .fill("")
             .map((y, j) => {
