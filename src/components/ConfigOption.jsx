@@ -7,19 +7,13 @@ const ConfigOption = () => {
   };
 
   return (
-    <div className=" mt-3 ">
+    <div className=" mt-3 text-center">
       {!isOpen ? (
-        <button
-          className=" secondary bg-white align-center"
-          onClick={toggleBtn}
-        >
-          open
+        <button className=" bg-white align-center" onClick={toggleBtn}>
+          Openable
         </button>
       ) : (
-        <button
-          className=" secondary bg-white align-center"
-          onClick={toggleBtn}
-        >
+        <button className=" bg-gray-200 align-center" onClick={toggleBtn}>
           Fixed
         </button>
       )}

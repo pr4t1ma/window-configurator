@@ -1,6 +1,7 @@
 import { useState } from "react";
 import ConfigOption from "../components/ConfigOption";
 import Header from "../components/Header";
+import PageHeader from "../components/PageHeader";
 
 const ConfigPage = () => {
   const [countX, setCountX] = useState(1);
@@ -21,43 +22,46 @@ const ConfigPage = () => {
   };
   return (
     <div>
+      <PageHeader link="/catalog" title="Add/edit window" />
       <Header />
-      <div className="grid-container border-3">
-        {Array(countY)
-          .fill("")
-          .map((y, j) => {
-            return Array(countX)
-              .fill("")
-              .map((x, i) => (
-                <div
-                  key={i}
-                  className="grid-item"
-                  style={{ gridColumnStart: i + 1, gridRowStart: j + 1 }}
-                >
-                  {`${i + 1}, ${j + 1}`}
-                  <ConfigOption />
-                </div>
-              ));
-          })}
+      <div className="container flex min-h-[50vh]">
+        <div className="border p-4 gap-4 border-gray-400 inline-grid m-auto">
+          {Array(countY)
+            .fill("")
+            .map((y, j) => {
+              return Array(countX)
+                .fill("")
+                .map((x, i) => (
+                  <div
+                    key={i}
+                    className="grid-item"
+                    style={{ gridColumnStart: i + 1, gridRowStart: j + 1 }}
+                  >
+                    {`${i + 1}, ${j + 1}`}
+                    <ConfigOption />
+                  </div>
+                ));
+            })}
+        </div>
       </div>
       <div className="">
         <div className="addBtn-group-x fixed right-10 bottom-1/2">
-          <button className=" primary mr-3 " onClick={subtractLastColumn}>
+          <button className="secondary mr-3" onClick={subtractLastColumn}>
             -
           </button>
           <button
-            className=" primary add-btn "
+            className="secondary add-btn"
             onClick={() => setCountX((countX) => countX + 1)}
           >
             +
           </button>
         </div>
-        <div className="addBtn-group-y  fixed right-1/2 bottom-10">
-          <button className="primary add-btn mr-3" onClick={subtractLastRow}>
+        <div className="addBtn-group-y fixed right-1/2 bottom-10">
+          <button className="secondary add-btn mr-3" onClick={subtractLastRow}>
             -
           </button>
           <button
-            className="primary add-btn y"
+            className="secondary add-btn y"
             onClick={() => setCountY((countY) => countY + 1)}
           >
             +

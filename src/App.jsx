@@ -10,9 +10,9 @@ function App() {
       <div className="">
         <Router>
           <Routes>
-            <Route exact path="/" element={<CatalogPage />} />
+            <Route exact path="/" element={<ProjectListPage />} />
             <Route exact path="/config" element={<ConfigPage />} />
-            <Route exact path="/project-list" element={<ProjectListPage />} />
+            <Route exact path="/catalog" element={<CatalogPage />} />
           </Routes>
         </Router>
       </div>

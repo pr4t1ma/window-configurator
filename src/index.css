@@ -16,7 +16,6 @@ h1,
 h2 {
   font-size: 3.2rem;
   line-height: 1.1;
-  font-weight: bold;
 }
 
 h2 {
@@ -26,34 +25,30 @@ h3 {
   font-size: 1.5rem;
 }
 
-button {
-  @apply bg-white rounded-full px-6 py-2 text-gray-700 border hover:bg-gray-200;
+button,
+.button {
+  @apply inline-block bg-white rounded-full px-6 py-2 text-gray-700 border hover:bg-gray-200;
 }
 
-button.primary {
+button.primary,
+.button.primary {
   @apply bg-primary rounded-full px-6 py-2 text-white border hover:bg-primary-light;
 }
 
-button.secondary {
+button.secondary,
+.button.secondary {
   @apply bg-tertiary hover:bg-tertiary-light text-white;
 }
 
 button:focus,
-button:focus-visible {
+.button:focus,
+button:focus-visible,
+.button:focus-visible {
   @apply outline-primary outline;
 }
 
 .container {
   @apply mx-auto;
-}
-
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(4, auto);
-  gap: 10px;
-  margin: 0 auto;
-  width: fit-content;
 }
 
 .grid-item {

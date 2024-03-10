@@ -8,9 +8,8 @@ import TableHeader from "../components/TableHeader";
 const CatalogPage = () => {
   return (
     <div className=" ">
-      <PageHeader />
+      <PageHeader link="/" title="Current project catalogue" />
       <Searchsection />
-      <div className="container">Total entires 15 </div>
       <TableHeader />
       <CatalogItems />
       <FooterMenu />

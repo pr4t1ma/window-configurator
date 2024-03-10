@@ -1,29 +1,28 @@
-import { useState } from "react";
 import CatalogElement from "./CatalogElement";
 
 const CatalogItems = () => {
   return (
     <div className="container  ">
       <CatalogElement
-        img="https://via.placeholder.com/200x200"
+        img="/images/window2.jpeg"
         frameSize="frame size"
         frameMaterial="Frame material"
         feature="Feature"
       />
       <CatalogElement
-        img="https://via.placeholder.com/200x200"
+        img="/images/window3.jpeg"
         frameSize="frame size"
         frameMaterial="Frame material"
         feature="Feature"
       />
       <CatalogElement
-        img="https://via.placeholder.com/200x200"
+        img="/images/window4.jpeg"
         frameSize="frame size"
         frameMaterial="Frame material"
         feature="Feature"
       />
       <CatalogElement
-        img="https://via.placeholder.com/200x200"
+        img="/images/window5.jpeg"
         frameSize="frame size"
         frameMaterial="Frame material"
         feature="Feature"

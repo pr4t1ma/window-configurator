@@ -1,11 +1,15 @@
+import { Link } from "react-router-dom";
+
 const ProjectCard = ({ img, text }) => {
   return (
-    <div>
+    <Link to="/catalog">
       <div>
-        <img src={img} alt="" />
+        <div>
+          <img src={img} alt="" />
+        </div>
+        <h3>{text}</h3>
       </div>
-      <h3>{text}</h3>
-    </div>
+    </Link>
   );
 };
 
