@@ -7,8 +7,8 @@ const navigationData = [
 
 const Header = () => {
   return (
-    <div className="header">
-      <ul className="list-none flex justify-between mb-4 bg-slate-300 p-4 rounded-md">
+    <div className="header order-red-500 border-3">
+      <ul className="list-none flex justify-between mb-4 bg-slate-300 p-4 rounded-md border-4 border-red-950">
         {navigationData.map((item, i) => (
           <li
             className=" border-b-2 border-transparent rounded-sm hover:border-b-2 hover:border-black"
