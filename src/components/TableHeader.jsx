@@ -6,7 +6,7 @@ const TableHeader = () => {
     { label: "frame feture2", href: "/" },
   ];
   return (
-    <div className="bg-gray-300 p-5">
+    <div className="bg-gray-300 container p-4">
       <ul className="flex justify-between">
         {headerData.map((item, index) => (
           <li className="" key={index}>
