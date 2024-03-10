@@ -1,5 +1,3 @@
-import { FaCross } from "react-icons/fa6";
-
 const navigationData = [
   { name: "Layout", href: "/" },
   { name: "Type", href: "/type" },
