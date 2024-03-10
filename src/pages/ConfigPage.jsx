@@ -4,8 +4,8 @@ import Header from "../components/Header";
 import PageHeader from "../components/PageHeader";
 
 const ConfigPage = () => {
-  const [countX, setCountX] = useState(1);
-  const [countY, setCountY] = useState(1);
+  const [countX, setCountX] = useState(2);
+  const [countY, setCountY] = useState(2);
 
   const subtractLastRow = () => {
     // Check if the current value of countY is greater than 1

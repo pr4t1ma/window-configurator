@@ -62,7 +62,7 @@ button:focus-visible,
     #a2caf2 41%
   ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 
-  border: 10px inset #ccc;
+  border: 10px inset #e2e8f1;
   width: 200px;
   height: 200px;
 }
